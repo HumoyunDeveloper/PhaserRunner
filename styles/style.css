@@ -1,0 +1,46 @@
+@import url("./_reset.css");
+@import url("./_tools.css");
+
+@font-face {
+    font-family: Game;
+    src: url("../res/fonts/Arista20AlternateRegular-jy89.ttf");
+}
+
+body, html {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    overflow: hidden;
+    font-family: Game;
+}
+
+#wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+canvas {
+    border-radius: 5px;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+    font-size: 50px;
+    background-color: rgba(0,0,0,0.8);
+    flex-direction: column;
+}
+
+.intro p {
+    font-size: 20px;
+}
